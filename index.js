@@ -9,7 +9,7 @@ $(function(){
 $(function(){
   $('.shopping-item-toggle').click
   (function(event){
-    $(this).find('span').toggleClass('shopping-item__checked');
+    $(this).closest('li').find('.shopping-item').toggleClass('shopping-item__checked');
   });
 });
 
